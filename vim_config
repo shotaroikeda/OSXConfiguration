@@ -1,0 +1,9 @@
+syntax on
+set cindent
+set autoindent
+set number
+set expandtab
+
+if $TERM == "xterm-256color"
+  set t_Co=256
+endif
