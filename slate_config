@@ -1,5 +1,6 @@
 # This is the default .slate file.
 # If no ~/.slate file exists this is the file that will be used.
+# potato
 
 config defaultToCurrentScreen true
 config nudgePercentOf screenSize
