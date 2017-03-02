@@ -95,8 +95,8 @@ export HOMEBREW_GITHUB_API_TOKEN="179f6e01d14e1deb6753f989f0886c60efd90df4"
 
 if [ -z "$INSIDE_EMACS" ];
 then
-    local current_dir='%{$terminfo[bold]$fg[green]%} %~%{$reset_color%}';
-    local PROMPT="╭─${current_dir}
+        local current_dir='%{$terminfo[bold]$fg[green]%} %~%{$reset_color%}'
+        local PROMPT="╭─${current_dir}
 ╰─%B$%b ";
 else
     local PROMPT='[%~] $ ';
@@ -110,11 +110,7 @@ function frameworkpython {
     fi
 }
 
-eval "$(pyenv init -)"
-
-export PYENV_VIRTUALENV_DISABLE_PROMPT=1
-
 # Java Specific Configuration
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home
 export PATH=$JAVA_HOME/bin:$PATH
 export MAVEN_OPTS=-XX:+TieredCompilation

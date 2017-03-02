@@ -7,6 +7,7 @@ rm -f ~/.bashrc
 rm -f ~/.slate
 rm -f ~/.vimrc
 rm -f ~/.gitconfig
+rm -f ~/.zshrc
 
 echo "Symlinking backed up profile code"
 # Symlink files from current directory
@@ -15,6 +16,7 @@ ln bashrc ~/.bashrc
 ln slate_config ~/.slate
 ln vim_config ~/.vimrc
 ln git_config ~/.gitconfig
+ln zshrc ~/.zshrc
 
 echo "Assigning proper permissions for execute and read"
 # Set permissons rwxrwxrwx
